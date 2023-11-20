@@ -19,7 +19,7 @@ function deepEqual(value1, value2) {
             // Iterate through the keys and recursively call deepEqual to compare the values
             for (let i = 0; i < array1.length; i++) {
                 // Compare the keys and their corresponding values recursively
-                if (array1[i] !== array2[i] || deepEqual(value1[array1[i]], value2[array1[i]]) == false) {
+                if (array1[i] !== array2[i] || deepEqual(value1[array1[i]], value2[array2[i]]) == false) {
                     return false;
                 }
             }
@@ -35,22 +35,18 @@ function deepEqual(value1, value2) {
 let object1 = {
     1: "a",
     2: "b",
-    0: function() {console.log("hello, world!")},
     5: {
         1: "a",
         2: "b",
-        0: function() {console.log("hello, world!")}
     }
 };
 
 let object2 = {
     1: "a",
     2: "b",
-    0: function() {console.log("hello, world!")},
     5: {
         1: "a",
         2: "b",
-        0: function() {console.log("hello, world!")}
     }
 };
 
